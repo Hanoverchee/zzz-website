@@ -37,18 +37,18 @@ function typeWriter(setTyped: Function) {
 const infoBoxes = [
   {
     title: "Community First",
-    text: "The protocol is determined by the community. Proposals are made by and voted on by holders of ZZZ / NAP.",
+    text: "The protocol is determined by the community. Proposals are made by and voted on by holders of RICE / rCHI.",
     icon: <img src={communityIcon} alt="community" />,
   },
   {
-    title: "NAP Token",
+    title: "rCHI Token",
     text:
-      "NAP is the an extra layer for the economy. It act's as a gas token in the system. It can be spent to increase your yields by the Boost functionality. Revenues from purchases are halved 50% towards future products and 50% towards development fund.",
+      "rCHI is the an extra layer for the economy. It act's as a gas token in the system. It can be spent to increase your yields by the Boost functionality. Revenues from purchases are halved 50% towards future products and 50% towards development fund.",
     icon: <img src={napIcon} alt="community" />,
   },
   {
     title: "Partnerships",
-    text: "ZZZ is committed to continuing innovations with other Ethereum projects.",
+    text: "RICE is committed to continuing innovations with other Binance Smart Chain projects.",
     icon: <img src={connectionIcon} alt="connection" />,
   },
 ];
@@ -65,10 +65,10 @@ function Home() {
         <HomeTitle>
           <div id="title">{typed && title}</div>
           <SocialLinks>
-            <SocialLink title="Telegram" icon={telegramIcon} href="https://t.me/ZZZfinance/" />
-            <SocialLink title="Twitter" icon={twitterIcon} href="https://twitter.com/zzzfinance/" />
-            <SocialLink title="Medium" icon={mediumIcon} href="https://medium.com/@zzzfinance/" />
-            <SocialLink title="Discord" icon={discordIcon} href="https://discord.gg/DQXmtB3" />
+            <SocialLink title="Telegram" icon={telegramIcon} href="https://t.me/TangyuanFinance" />
+            <SocialLink title="Twitter" icon={twitterIcon} href="https://twitter.com/TangyuanFinance" />
+            <SocialLink title="Medium" icon={mediumIcon} href="https://medium.com/@tangyuanFinance/" />
+            <SocialLink title="Discord" icon={discordIcon} href="https://discord.gg/" />
           </SocialLinks>
         </HomeTitle>
       </Layout.ExtraContent>
@@ -79,20 +79,20 @@ function Home() {
               <News />
               <div className="info-content">
                 <img src={zzzlogo} alt="zzz" className="zzz-logo" />
-                <h2>What is ZZZ?</h2>
+                <h2>What is Tangyuan?</h2>
                 <p>
-                  ZZZ is a community-centered DeFi project by the people, for the people. The decisions and actions of ZZZ are made by its
+                  Tangyuan is a community-centered DeFi project by the people, for the people. The decisions and actions of Tangyuan are made by its
                   members and community to assure equity and fairness for all.
                 </p>
                 <p>It all started by a single developer and as of now the project is handed to the community to grow forwards.</p>
                 <p>
                   It is a new form of governance system. A think-tank. A place where innovation, entrepreneurship, and technological
-                  advancements are the priority, creating a much needed utility focus to the blockchain space. The value of ZZZ is
+                  advancements are the priority, creating a much needed utility focus to the blockchain space. The value of Tangyuan is
                   determined by the contribution and innovation of the community as a whole.
                 </p>
-                <h2>Why ZZZ?</h2>
+                <h2>Why Tangyuan?</h2>
                 <p>
-                  Owning <b>$ZZZ</b> enables your voice to be heard regarding the future of the project by enabling you to vote on and
+                  Owning <b>$Tangyuan</b> enables your voice to be heard regarding the future of the project by enabling you to vote on and
                   initiate proposals for the protocol.
                 </p>
                 <p>
@@ -100,12 +100,12 @@ function Home() {
                   where users pay no fees is coming later.
                 </p>
                 <p>
-                  Owning ZZZ provides you with unique bonuses on our DeFi-platform by giving your deposited assets a yield bonus according
-                  to the amount of ZZZ you are holding. So you are gaining the upper hand.
+                  Owning Tangyuan provides you with unique bonuses on our DeFi-platform by giving your deposited assets a yield bonus according
+                  to the amount of Tangyuan you are holding. So you are gaining the upper hand.
                 </p>
                 <h2>Okay, anything more?</h2>
                 <p>
-                  Mandatory part of the ZZZ ecosystem is its <b>collaborations</b> with other projects in the space to expand the reach of
+                  Mandatory part of the Tangyuan ecosystem is its <b>collaborations</b> with other projects in the space to expand the reach of
                   the ecosystem.
                 </p>
                 <p>
@@ -119,13 +119,13 @@ function Home() {
                 </p>
                 <h2>Tokenomics</h2>
                 <p>
-                  A capped supply of <b>20,000 $ZZZ</b> has been distributed to the community. There was no presale, dev or VC wallets.
+                  A capped supply of <b>100,000,000 $RICE</b> 
                 </p>
                 <p>
-                  A capped supply of <b>20,000,000 $NAP</b> has been created to fuel the ecosystem and its development.
+                  A capped supply of <b>2,000,000,000 $rRICE</b> has been distributed to the community. There was no presale, dev or Binance Smart wallets.
                 </p>
                 <p>
-                  A dynamic supply of <b>$DREAM</b> has been created for further use cases including a gamifying-experience
+                  A dynamic supply of <b>$rDICE</b> has been created for further use cases including a gamifying-experience
                 </p>
               </div>
             </div>
@@ -165,7 +165,7 @@ function Home() {
               </p>
             </div>
             <a
-              href="https://medium.com/zzzfinance/certik-completes-audit-of-zzz-smart-contracts-c925ae8786d"
+              href="https://medium.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="button"

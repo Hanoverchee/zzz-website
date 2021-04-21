@@ -7,7 +7,7 @@ import {
   GovernanceIframe,
 } from "views/Governance/Governance.styles";
 
-const title = "Vote on the future of ZZZ";
+const title = "Vote on the future of Tangyuan Finance";
 
 function Governance() {
   return (
@@ -29,7 +29,7 @@ function Governance() {
               alt="governance"
             />
             <a
-              href="https://forums.zzz.finance"
+              href="https://forums.tangyuan.finance"
               target="blank"
               rel="noopener noreferrer"
               style={{ pointerEvents: "none", opacity: "0.4" }}
@@ -44,7 +44,7 @@ function Governance() {
       <Layout.MainContent view="governance">
         <GovernanceIframe
           className="governance-frame"
-          src="https://snapshot.page/#/zzz-finance"
+          src="https://snapshot.page/#/Tangyuan-Finance"
           title="snapshot-governance"
         />
         {/* <GovernanceContent>
@@ -105,7 +105,7 @@ function Governance() {
                 <div className="title">Join the conversation</div>
                 <div className="join">
                   <div className="join-text">
-                    Before a proposal goes to the ZZZ Parliament, it's debated
+                    Before a proposal goes to the Tangyuan Finance Parliament, it's debated
                     in the Town Square.
                   </div>
                   <img src={img_join_convo} alt="zzz-join_convo" />

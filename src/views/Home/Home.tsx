@@ -19,7 +19,7 @@ import { Certik, HomeContent, HomeTitle, InfoBox, InfoBoxes, Introduction } from
 import Listings from "components/Listings/Listings";
 
 let i = 0;
-const title = "Decentralized finance reimagined. For the people, by the people.";
+const title = "Decentralized finance Binance Smart Chain. For the people by Tangyuan Finance.";
 
 function typeWriter(setTyped: Function) {
   if (i < title.length) {

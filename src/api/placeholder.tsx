@@ -15,10 +15,10 @@ export default {
       "https://exchange.tangyuan.finance/#/swap?inputCurrency=",
     name: "Backsave",
     retired: true,
-    uiName: "Snoozer",
+    uiName: "backsave",
   },
   RICE: {
-    address: "",
+    address: "/",
     boostAvailable: true,
     buyAssetFrom:
       "https://exchange.tangyuan.finance/#/swap?inputCurrency=",
@@ -27,7 +27,7 @@ export default {
     uiName: "RICE",
   },
   rRICE: {
-    address: "",
+    address: "/",
     boostAvailable: true,
     buyAssetFrom:
       "https://exchange.tangyuan.finance/#/swap?inputCurrency=",

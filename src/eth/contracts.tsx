@@ -44,7 +44,7 @@ const boostLevels: { [key: string]: BoostLevel[] } = {
   ],
 };
 
-/*
+
 // Mainnet token
 
 // export const tokens: { [tokenName: string]: Token } = {
@@ -211,9 +211,9 @@ const boostLevels: { [key: string]: BoostLevel[] } = {
 //  UNIC: {
 //    name: "UNIC",
  //   address: "0x37114773d5d74bd27c8e1167aeb50a6e0a3a354c",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
+ //   abi: require("./abi/erc20_abi.json"),
+ //   decimals: 18, 
+},
   CATETH: {
     name: "CATETH",
     address: "0x781ce9a6808503261ab27973f3a34dd9f851a6fc",
@@ -990,8 +990,8 @@ export const pools: Pool[] = [
   //   poolStatus: PoolStatus.Closed,
   //   poolType: PoolType.SingleTokenLPOutput,
   //   category: PoolCategory.ZZZ,
-  // },
- //* {
+     },
+     {
     id: "11",
     name: "Napper",
     address: "0x05d0c213386e25BFB3f3872FCE6c7c7998A3E54C",
@@ -1166,7 +1166,7 @@ export const pools: Pool[] = [
     category: PoolCategory.ZZZ,
     boostLevels: boostLevels.normal,
   },
-];
+ ];
 
 // Local test network tokens
 export const localTokens: { [tokenName: string]: Token } = {
@@ -1210,7 +1210,7 @@ export const localTokens: { [tokenName: string]: Token } = {
     purchaseFrom:
       "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
   },
-  NAPV2: {
+   NAPV2: {
     name: "NAP",
     address: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
     abi: require("./abi/erc20_abi.json"),
@@ -1303,10 +1303,10 @@ export const kovanTokens: { [tokenName: string]: Token } = {
     decimals: 18,
     purchaseFrom: "",
   },
-};
-
-export const vaultContracts: { [network: string]: any } = {
-  unknown: {
+  };
+ 
+   export const vaultContracts: { [network: string]: any } = {
+    unknown: {
     vault: {
       address: "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
       abi: require("./abi/vault.json"),
@@ -1337,12 +1337,13 @@ export const vaultContracts: { [network: string]: any } = {
       address: "0xe41058D378B972c48F5bCBec2b39A8b1f8964706",
       abi: require("./abi/multiplier.json"),
     },
-//*)    boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
+     boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
+    )    
   },
 };
 
-export const kovanPools: Pool[] = [
-  {
+    export const kovanPools: Pool[] = [
+    {
     id: "10212",
     name: "KOVANTEST",
     address: "0xEce0aC88Ef2B9Ab174cc9c1472AF1f6776554ECE",
@@ -1380,6 +1381,7 @@ export const contracts: { [network: string]: any[] } = {
       abi: require("./abi/pool_multiplier.json"),
     },
   ],
+  
   homestead: [
     {
       name: "Multiplier",
@@ -1389,18 +1391,19 @@ export const contracts: { [network: string]: any[] } = {
   ],
 };
 
-export function getContract(name: string) {
+  export function getContract(name: string) {
   return contracts[EthStore.networkName].find(
     (contract: any) => contract.name === name
-  );
-}
+   );
+   }
 
-export const otherPools = [
+   export const otherPools = [
   {
     name: "Balancer Pool",
     skipRender: false,
     address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
     abi: require("./abi/balancer_pool_abi.json"),
    
-   },
-};
+    ],
+  },
+];

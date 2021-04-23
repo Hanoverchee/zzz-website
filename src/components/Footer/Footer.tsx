@@ -13,14 +13,14 @@ function Footer() {
   return (
     <FooterContainer>
       <div className="disclaimer">
-        $RICE, $rCHI or $rDICE are not an official BSC project. $RICE, $rCHI or
-        $rDICE are an experimental token. Before purchasing $RICE, $rCHI or
+        $RICE, $rRICE or $rDICE are not an official BSC project. $RICE, $rRICE or
+        $rDICE are an experimental token. Before purchasing $RICE, $rRICE or
         $rDICE, or any other tokens mentioned on this site or otherwise, you
         must ensure that the nature, complexity and risks inherent in the
         trading of cryptocurrency are suitable for your objectives in light of
         your circumstances and financial position. You should only purchase
         $DREAM to have fun and to experience this experimental token with us.
-        Many factors outside of the control of $RICE, $rCHI or $rDICE will effect
+        Many factors outside of the control of $RICE, $rRICE or $rDICE will effect
         the market price, including, but not limited to, national and
         international economic, financial, regulatory, political, terrorist,
         military, and other events, adverse or positive news events and
@@ -28,7 +28,7 @@ function Footer() {
         conditions. Extreme changes in price may occur at any time, resulting in
         a potential loss of value, complete or partial loss of purchasing power,
         and difficulty or a complete inability to sell or exchange your digital
-        currency. $RICE, $rCHI or $rDICE shall be under no obligation to purchase
+        currency. $RICE, $rRICE or $rDICE shall be under no obligation to purchase
         or to broker the purchase back from you of your cryptocurrency in
         circumstances where there is no viable market for the purchase of the
         same. None of the content published on this site constitutes a
@@ -52,7 +52,7 @@ function Footer() {
           title="Github"
           color="#95A5A6"
         />
-        {/* <a
+        {/ <a
           href="https://github.com/Tangyuan-Finance/"
           target="_blank"
           rel="noopener noreferrer"
@@ -83,7 +83,7 @@ function Footer() {
           <Button className="button-footer" icon={emailicon}>
             Email
           </Button>
-        </a> */}
+        </a> /}
       </div>
     </FooterContainer>
   );

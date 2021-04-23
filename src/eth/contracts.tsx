@@ -44,171 +44,173 @@ const boostLevels: { [key: string]: BoostLevel[] } = {
   ],
 };
 
-// Mainnet tokens
-export const tokens: { [tokenName: string]: Token } = {
-  Backup: {
-    name: "Backup",
-    address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
-    abi: require("./abi/backup.json"),
-    decimals: 18,
-    "https://backuptoken.info/pair/0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
-  },
-  Backsave: {
-    name: "Backsave",
-    address: "0x93ED140172Ff226daD1F7F3650489b8Daa07aE7F",
-    abi: require("./abi/backsave.json"),
-    decimals: 18,
-    "https://backuptoken.info/pair/",
-  },
-  Cake: {
-    name: "Cake",
-    address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-    abi: require("./abi/cake.json"),
-    decimals: 18,
-    purchaseFrom:
-      "https://backuptoken.info/pair/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
-  },
-  MDEX: {
-    name: "MDEX",
-    address: "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
-    abi: require("./abi/mdex.json"),
-    decimals: 18,
-    "https://backuptoken.info/pair/0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
-  },
-  BSCSWAP: {
-    name: "BSCSWAP",
-    address: "0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
-    abi: require("./abi/bscswap.json"),
-    isLPToken: true,
-    decimals: 18,
-    "https://backuptoken.info/pair/0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
-  },
-  DeFiYield: {
-    name: "DYP ",
-    address: "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-    abi: require("./abi/dyb.json"),
-    decimals: 18,
-    isLPToken: true,
-    "https://backuptoken.info/pair/0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
-  },
-  SafeMoon: {
-    name: "SAFEMOON",
-    address: "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
-    abi: require("./abi/savemon.json"),
-    decimals: 9,
-    isLPToken: true,
-  },
-   Bingo: {
-    name: "Bingo",
-    address: "0x579A6277a6c2c63a5b25006F63Bce5DC8D9c25e7",
-    abi: require("./abi/bingo.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  ETH: {
-    name: "Ethereum Token",
-    address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
-    abi: require("./abi/eth.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  DAI: {
-    name: "DAI",
-    address: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
-    abi: require("./abi/dai.json"),
-    decimals: 18,
-    purchaseFrom:
-      "https://info.uniswap.org/pair/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
-  },
-  WETH: {
-    name: "WETH",
-    address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  DAI: {
-    name: "DAI",
-    address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    purchaseFrom:
-      "https://info.uniswap.org/pair/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
-  },
-  NAP: {
-    name: "NAP",
-    address: "0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  NAPETH: {
-    name: "NAP/ETH",
-    address: "0xabca101b4a5404cfa49544e475d211e65619c9c7",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  COVAL: {
-    name: "COVAL",
-    address: "0x3d658390460295fb963f54dc0899cfb1c30776df",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 8,
-  },
-  COVALETH: {
-    name: "COVALETHLP",
-    address: "0x3bf1b837ccc1f62114a3e74ced4fcfb121d7e52a",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  CORD: {
-    name: "CORD",
-    address: "0x74Fb9DA15d4f9a34D8C825798DA0Fa5c400DadE1",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  CORDETH: {
-    name: "CORDETH",
-    address: "0xf5ae4b8017fdd81d5ee25132d6bbcd75442be90a",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  AHFETH: {
-    name: "AHFETHLP",
-    address: "0x0b1d5a651c16e4218613ca4a261cc9ef71f2ac9d",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  AHF: {
-    name: "AHF",
-    address: "0xd6d3608f2d770d0a8d0da62d7afe21ea1da86d9c",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  SSL: {
-    name: "SSL",
-    address: "0x0d9227f9c4ab3972f994fccc6eeba3213c0305c4",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  SSLETH: {
-    name: "SSLETHLP",
-    address: "0x287856d10418e01ef1e93df9962b04d9a3a521c9",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  UNICETH: {
-    name: "UNICETH",
-    address: "0x4c988e54b253389683d30494e4e4da12ba985bf6",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  UNIC: {
-    name: "UNIC",
-    address: "0x37114773d5d74bd27c8e1167aeb50a6e0a3a354c",
+/*
+// Mainnet token
+
+// export const tokens: { [tokenName: string]: Token } = {
+ //   Backup: {
+ //     name: "Backup",
+ //   address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
+ //   abi: require("./abi/backup.json"),
+ //   decimals: 18,
+ //   "https://backuptoken.info/pair/",
+ //  },
+ // Backsave: {
+ //   name: "Backsave",
+//    address: "0x93ED140172Ff226daD1F7F3650489b8Daa07aE7F",
+//    abi: require("./abi/backsave.json"),
+//    decimals: 18,
+//    "https://backuptoken.info/pair/",
+//  },
+//  Cake: {
+//    name: "Cake",
+//    address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+//    abi: require("./abi/cake.json"),
+//    decimals: 18,
+//    purchaseFrom:
+//      "/",
+//  },
+//  MDEX: {
+//    name: "MDEX",
+//    address: "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
+//    abi: require("./abi/mdex.json"),
+//    decimals: 18,
+//    "/",
+//  },
+//  BSCSWAP: {
+//    name: "BSCSWAP",
+//    address: "0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
+///    abi: require("./abi/"),
+ //   isLPToken: true,
+ //   decimals: 18,
+ //   "/",
+ // },
+//  DeFiYield: {
+//    name: "DYP ",
+//    address: "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
+//    abi: require("./abi/dyb.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//    "/",
+//  },
+//  SafeMoon: {
+//    name: "SAFEMOON",
+//    address: "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+//    abi: require("./abi/savemon.json"),
+ //   decimals: 9,
+ //   isLPToken: true,
+//  },
+//   Bingo: {
+//    name: "Bingo",
+//    address: "0x579A6277a6c2c63a5b25006F63Bce5DC8D9c25e7",
+//    abi: require("./abi/bingo.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  ETH: {
+//    name: "Ethereum Token",
+//    address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+//    abi: require("./abi/eth.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  DAI: {
+//    name: "DAI",
+//    address: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+//    abi: require("./abi/dai.json"),
+//    decimals: 18,
+//    purchaseFrom:
+//      "/",
+//  },
+//  WETH: {
+//    name: "WETH",
+//    address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//  },
+//  DAI: {
+//    name: "DAI",
+//    address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    purchaseFrom:
+//      "/",
+//  },
+//  NAP: {
+//    name: "NAP",
+//    address: "0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//  },
+//  NAPETH: {
+//    name: "NAP/ETH",
+//    address: "0xabca101b4a5404cfa49544e475d211e65619c9c7",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  COVAL: {
+//    name: "COVAL",
+//    address: "0x3d658390460295fb963f54dc0899cfb1c30776df",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 8,
+//  },
+//  COVALETH: {
+//    name: "COVALETHLP",
+//    address: "0x3bf1b837ccc1f62114a3e74ced4fcfb121d7e52a",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  CORD: {
+//    name: "CORD",
+//    address: "0x74Fb9DA15d4f9a34D8C825798DA0Fa5c400DadE1",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//  },
+//  CORDETH: {
+//    name: "CORDETH",
+//    address: "0xf5ae4b8017fdd81d5ee25132d6bbcd75442be90a",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  AHFETH: {
+//    name: "AHFETHLP",
+//    address: "0x0b1d5a651c16e4218613ca4a261cc9ef71f2ac9d",
+ //   abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  AHF: {
+//    name: "AHF",
+//   address: "0xd6d3608f2d770d0a8d0da62d7afe21ea1da86d9c",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//  },
+//  SSL: {
+//    name: "SSL",
+//    address: "0x0d9227f9c4ab3972f994fccc6eeba3213c0305c4",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//  },
+//  SSLETH: {
+//    name: "SSLETHLP",
+ //   address: "0x287856d10418e01ef1e93df9962b04d9a3a521c9",
+ //   abi: require("./abi/erc20_abi.json"),
+ //   decimals: 18,
+ //   isLPToken: true,
+//  },
+//  UNICETH: {
+//    name: "UNICETH",
+//    address: "0x4c988e54b253389683d30494e4e4da12ba985bf6",
+//    abi: require("./abi/erc20_abi.json"),
+//    decimals: 18,
+//    isLPToken: true,
+//  },
+//  UNIC: {
+//    name: "UNIC",
+ //   address: "0x37114773d5d74bd27c8e1167aeb50a6e0a3a354c",
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
   },
@@ -869,7 +871,7 @@ export const pools: Pool[] = [
     category: PoolCategory.ZZZ,
     boostLevels: boostLevels.extended,
   },
-  // {
+  {
   //   id: "5",
   //   name: "Yawn",
   //   address: "0x6aA4478C45c7818A9b5c1C513D894cF74b596bd6",
@@ -889,7 +891,7 @@ export const pools: Pool[] = [
   //   category: PoolCategory.ZZZ,
   //   boostLevels: boostLevels.normal,
   //   statusText: "Pools is running low, please withdraw or exit!",
-  // },
+  },
   {
     id: "6",
     name: "Snore",
@@ -930,7 +932,7 @@ export const pools: Pool[] = [
     poolStatus: PoolStatus.Retired,
     poolType: PoolType.LP,
     category: PoolCategory.ZZZ,
-    boostLevels: boostLevels.normal,
+//*    boostLevels: boostLevels.normal,
   },
   // {
   //   id: "8",
@@ -989,7 +991,7 @@ export const pools: Pool[] = [
   //   poolType: PoolType.SingleTokenLPOutput,
   //   category: PoolCategory.ZZZ,
   // },
-  {
+ //* {
     id: "11",
     name: "Napper",
     address: "0x05d0c213386e25BFB3f3872FCE6c7c7998A3E54C",
@@ -1335,7 +1337,7 @@ export const vaultContracts: { [network: string]: any } = {
       address: "0xe41058D378B972c48F5bCBec2b39A8b1f8964706",
       abi: require("./abi/multiplier.json"),
     },
-    boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
+//*)    boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
   },
 };
 
@@ -1399,5 +1401,6 @@ export const otherPools = [
     skipRender: false,
     address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
     abi: require("./abi/balancer_pool_abi.json"),
+*//
   },
 ];

@@ -1401,5 +1401,6 @@ export const otherPools = [
     skipRender: false,
     address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
     abi: require("./abi/balancer_pool_abi.json"),
+   
    },
- ];
+};

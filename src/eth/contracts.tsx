@@ -49,7 +49,7 @@ export const tokens: { [tokenName: string]: Token } = {
   Backup: {
     name: "Backup",
     address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
-    abi: require("./abi/erc20_abi.json"),
+    abi: require("./abi/backup.json"),
     decimals: 18,
     "https://backuptoken.info/pair/0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
   },

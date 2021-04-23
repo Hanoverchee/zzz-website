@@ -46,74 +46,79 @@ const boostLevels: { [key: string]: BoostLevel[] } = {
 
 // Mainnet tokens
 export const tokens: { [tokenName: string]: Token } = {
-  ZZZ: {
-    name: "ZZZ",
-    address: "0xc75F15AdA581219c95485c578E124df3985e4CE0",
+  Backup: {
+    name: "Backup",
+    address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
+    "https://backuptoken.info/pair/0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
   },
-  ZZZV2: {
-    name: "ZZZV2",
+  Backsave: {
+    name: "Backsave",
     address: "0x93ED140172Ff226daD1F7F3650489b8Daa07aE7F",
-    abi: require("./abi/zzzv2.json"),
+    abi: require("./abi/backsave.json"),
     decimals: 18,
+    "https://backuptoken.info/pair/",
   },
-  NAPV2: {
-    name: "NAPV2",
-    address: "0xBc35D7753f0Db8Fb9c788b7d7d284cDd78A4EdE3",
-    abi: require("./abi/napv2.json"),
+  Cake: {
+    name: "Cake",
+    address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+    abi: require("./abi/cake.json"),
     decimals: 18,
     purchaseFrom:
-      "https://info.uniswap.org/pair/0x5c599e277c981d796dbf94c6e79ddac610d6052b",
+      "https://backuptoken.info/pair/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
   },
-  BPT: {
-    name: "BPT",
-    address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
-    abi: require("./abi/erc20_abi.json"),
+  MDEX: {
+    name: "MDEX",
+    address: "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
+    abi: require("./abi/mdex.json"),
     decimals: 18,
+    "https://backuptoken.info/pair/0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
   },
-  ZZZETH: {
-    name: "ZZZETHLP",
-    address: "0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    abi: require("./abi/erc20_abi.json"),
+  BSCSWAP: {
+    name: "BSCSWAP",
+    address: "0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
+    abi: require("./abi/bscswap.json"),
     isLPToken: true,
     decimals: 18,
+    "https://backuptoken.info/pair/0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
   },
-  ZZZNAP: {
-    name: "ZZZNAPLP",
-    address: "0x0DE0322D3ac0d5002e2bc9c3a188728728D90799",
-    abi: require("./abi/erc20_abi.json"),
+  DeFiYield: {
+    name: "DYP ",
+    address: "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
+    abi: require("./abi/dyb.json"),
     decimals: 18,
     isLPToken: true,
+    "https://backuptoken.info/pair/0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
   },
-  ZZZNAPV2: {
-    name: "ZZZNAPLPV2",
-    address: "0x5c599e277c981d796dbf94c6e79ddac610d6052b",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
+  SafeMoon: {
+    name: "SAFEMOON",
+    address: "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+    abi: require("./abi/savemon.json"),
+    decimals: 9,
     isLPToken: true,
   },
-  ZZZETHV2: {
-    name: "ZZZETHLPV2",
-    address: "0x4b29ed4190d8387755510feee729fbc974152a0c",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  DREAMETH: {
-    name: "DREAMETHLP",
-    address: "0x19b3de48392778f8e6ef332fee002aa5e15fe41a",
-    abi: require("./abi/erc20_abi.json"),
+   Bingo: {
+    name: "Bingo",
+    address: "0x579A6277a6c2c63a5b25006F63Bce5DC8D9c25e7",
+    abi: require("./abi/bingo.json"),
     decimals: 18,
     isLPToken: true,
   },
-  DREAM: {
-    name: "DREAM",
-    address: "0xa93D5Cfaa41193b13321c035b4bDD2B534172762",
-    abi: require("./abi/erc20_abi.json"),
+  ETH: {
+    name: "Ethereum Token",
+    address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+    abi: require("./abi/eth.json"),
+    decimals: 18,
+    isLPToken: true,
+  },
+  DAI: {
+    name: "DAI",
+    address: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    abi: require("./abi/dai.json"),
     decimals: 18,
     purchaseFrom:
-      "https://info.uniswap.org/pair/0x19b3de48392778f8e6ef332fee002aa5e15fe41a",
+      "https://info.uniswap.org/pair/0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3",
   },
   WETH: {
     name: "WETH",

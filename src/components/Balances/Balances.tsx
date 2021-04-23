@@ -13,7 +13,7 @@ function Balances({}: Props) {
         <tr>
           <td>
             <span role="img" aria-label="zzz">
-              💤
+              🍰
             </span>
           </td>
           <td>ZZZ</td>
@@ -23,7 +23,7 @@ function Balances({}: Props) {
         <tr>
           <td>
             <span role="img" aria-label="nap">
-              😪
+             🍄 
             </span>
           </td>
           <td>NAP</td>
@@ -33,7 +33,7 @@ function Balances({}: Props) {
         <tr>
           <td>
             <span role="img" aria-label="dream">
-              🔮
+              🥝
             </span>
           </td>
           <td>DREAM</td>

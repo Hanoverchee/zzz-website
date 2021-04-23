@@ -1,92 +1,92 @@
 export default {
-  DREAMNAP: {
-    address: "0xe1fb77d1bb84d364c141591d3a8d6e7827846d27",
+  BACKUP: {
+    address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
     boostAvailable: true,
     buyAssetFrom:
-      "https://uniswap.info/pair/0x0de0322d3ac0d5002e2bc9c3a188728728d90799",
-    name: "DREAMNAP",
-    retired: false,
-    uiName: "Dream",
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
+    name: "BACKUP",
+    retired: true,
+    uiName: "BACKUP",
   },
-  NAP: {
+  Backsave: {
     address: "0x8EC7466a5025aC26368bD8b8Cfd2571F9bC0DC6F",
     boostAvailable: false,
     buyAssetFrom:
-      "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
-    name: "NAP",
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=",
+    name: "Backsave",
     retired: true,
     uiName: "Snoozer",
   },
-  NAP2: {
-    address: "0x05d0c213386e25BFB3f3872FCE6c7c7998A3E54C",
-    boostAvailable: false,
+  RICE: {
+    address: "",
+    boostAvailable: true,
     buyAssetFrom:
-      "https://uniswap.info/pair/0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    name: "NAP2",
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=",
+    name: "RICE",
     retired: true,
-    uiName: "Napper",
+    uiName: "RICE",
   },
-  NAP3: {
-    address: "0x6aA4478C45c7818A9b5c1C513D894cF74b596bd6",
+  rRICE: {
+    address: "",
     boostAvailable: true,
     buyAssetFrom:
-      "https://app.uniswap.org/#/add/ETH/0xc75f15ada581219c95485c578e124df3985e4ce0",
-    name: "NAP3",
-    retired: false,
-    uiName: "Yawn",
-  },
-  NAP4: {
-    address: "0x02B8F9372958bD36BB1B6aB6eefeA36D2b0F4C14",
-    boostAvailable: true,
-    buyAssetFrom:
-      "https://uniswap.info/pair/0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    name: "NAP4",
-    retired: false,
-    uiName: "Snore",
-  },
-  NAP5: {
-    address: "0xd264865B9B70e95E274480EF61501e8E9D54220D",
-    boostAvailable: true,
-    buyAssetFrom:
-      "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
-    name: "NAP5",
-    retired: false,
-    uiName: "Snoozer v2",
-  },
-  NAP6: {
-    address: "0x4d16545f92F76a519b476F058A144a5e6dc543bc",
-    boostAvailable: true,
-    buyAssetFrom:
-      "https://uniswap.info/pair/0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    name: "NAP6",
-    retired: false,
-    uiName: "Napper v2",
-  },
-  NAP7: {
-    address: "0x3D46A6F8059DDA0cBcF923e8658AF6613DAbCdfE",
-    boostAvailable: true,
-    buyAssetFrom:
-      "https://uniswap.info/pair/0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    name: "NAP7",
-    retired: false,
-    uiName: "Sheep Counting",
-  },
-  ZZZ: {
-    address: "0xeEE0B2ED62615441CE31c3166a4179a4B8FcE615",
-    boostAvailable: true,
-    buyAssetFrom:
-      "https://app.uniswap.info/pair/0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    name: "ZZZ",
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=",
+    name: "rRICE",
     retired: true,
-    uiName: "Dreamer",
+    uiName: "rRICE",
   },
-  ZZZNAPDREAM: {
-    address: "0xfeefac18962d8d5e16701ec0efa57af71279671d",
+  Cake: {
+    address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
     boostAvailable: true,
     buyAssetFrom:
-      "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
-    name: "ZZZNAPDREAM",
-    retired: false,
-    uiName: "Deep Sleep",
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+    name: "Cake",
+    retired: true,
+    uiName: "cake",
+  },
+  Bscswap: {
+    address: "0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
+    boostAvailable: true,
+    buyAssetFrom:
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
+    name: "Bscswap",
+    retired: true,
+    uiName: "Bscswap",
+  },
+  Mdex: {
+    address: "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
+    boostAvailable: true,
+    buyAssetFrom:
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
+    name: "Mdex",
+    retired: true,
+    uiName: "Mdex",
+  },
+  Bunny: {
+    address: "0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+    boostAvailable: true,
+    buyAssetFrom:
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0xC9849E6fdB743d08fAeE3E34dd2D1bc69EA11a51",
+    name: "Bunny",
+    retired: true,
+    uiName: "Bunny",
+  },
+  BNB: {
+    address: "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    boostAvailable: true,
+    buyAssetFrom:
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    name: "BNB",
+    retired: true,
+    uiName: "BNB",
+  },
+  BUSD: {
+    address: "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+    boostAvailable: true,
+    buyAssetFrom:
+      "https://exchange.tangyuan.finance/#/swap?inputCurrency=0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56",
+    name: "BUSD",
+    retired: true,
+    uiName: "BUSD",
   },
 };

@@ -13,14 +13,14 @@ function Footer() {
   return (
     <FooterContainer>
       <div className="disclaimer">
-        $ZZZ, $NAP or $DREAM are not an official ETH project. $ZZZ, $NAP or
-        $DREAM are an experimental token. Before purchasing $ZZZ, $NAP or
-        $DREAM, or any other tokens mentioned on this site or otherwise, you
+        $RICE, $rRICE or $rDICE are not an official BSC project. $RICE, $rRICE or
+        $rDICE are an experimental token. Before purchasing $RICE, $rRICE or
+        $rDICE, or any other tokens mentioned on this site or otherwise, you
         must ensure that the nature, complexity and risks inherent in the
         trading of cryptocurrency are suitable for your objectives in light of
         your circumstances and financial position. You should only purchase
         $DREAM to have fun and to experience this experimental token with us.
-        Many factors outside of the control of $ZZZ, $NAP or $DREAM will effect
+        Many factors outside of the control of $RICE, $rRICE or $rDICE will effect
         the market price, including, but not limited to, national and
         international economic, financial, regulatory, political, terrorist,
         military, and other events, adverse or positive news events and
@@ -28,7 +28,7 @@ function Footer() {
         conditions. Extreme changes in price may occur at any time, resulting in
         a potential loss of value, complete or partial loss of purchasing power,
         and difficulty or a complete inability to sell or exchange your digital
-        currency. $ZZZ, $NAP or $DREAM shall be under no obligation to purchase
+        currency. $RICE, $rRICE or $rDICE shall be under no obligation to purchase
         or to broker the purchase back from you of your cryptocurrency in
         circumstances where there is no viable market for the purchase of the
         same. None of the content published on this site constitutes a
@@ -47,13 +47,13 @@ function Footer() {
       </div>
       <div className="links">
         <SocialLink
-          href="https://github.com/zzz-finance/"
+          href="https://github.com/Tangyuan-Finance"
           icon={githubicon}
           title="Github"
           color="#95A5A6"
         />
-        {/* <a
-          href="https://github.com/zzz-finance/"
+        {/ <a
+          href="https://github.com/Tangyuan-Finance/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -62,7 +62,7 @@ function Footer() {
           </Button>
         </a>
         <a
-          href="https://twitter.com/zzzfinance/"
+          href="https://twitter.com/TangyuanFinance/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -71,7 +71,7 @@ function Footer() {
           </Button>
         </a>
         <a
-          href="https://medium.com/@zzzfinance/"
+          href="https://medium.com/@TangyuanFinance/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -79,11 +79,11 @@ function Footer() {
             Medium
           </Button>
         </a>
-        <a href="mailto:hello@zzz.finance">
+        <a href="mailto:hello@tangyuan.finance">
           <Button className="button-footer" icon={emailicon}>
             Email
           </Button>
-        </a> */}
+        </a> /}
       </div>
     </FooterContainer>
   );

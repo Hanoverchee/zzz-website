@@ -44,92 +44,108 @@ const boostLevels: { [key: string]: BoostLevel[] } = {
   ],
 };
 
-// Mainnet tokens
-export const tokens: { [tokenName: string]: Token } = {
-  ZZZ: {
-    name: "ZZZ",
-    address: "0xc75F15AdA581219c95485c578E124df3985e4CE0",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  ZZZV2: {
-    name: "ZZZV2",
+
+// Mainnet token
+
+   export const tokens: { [tokenName: string]: Token } = {
+   Backup: {
+    name: "Backup",
+   address: "0x48e15ABBcb21C7f564c1B5Ae08A9f7829745F6D7",
+    abi: require("./abi/backup.json"),
+   decimals: 18,
+   "https://backuptoken.info/pair/",
+   },
+   Backsave: {
+    name: "Backsave",
     address: "0x93ED140172Ff226daD1F7F3650489b8Daa07aE7F",
-    abi: require("./abi/zzzv2.json"),
+    abi: require("./abi/backsave.json"),
     decimals: 18,
+    "https://backuptoken.info/pair/",
   },
-  NAPV2: {
-    name: "NAPV2",
-    address: "0xBc35D7753f0Db8Fb9c788b7d7d284cDd78A4EdE3",
-    abi: require("./abi/napv2.json"),
-    decimals: 18,
-    purchaseFrom:
-      "https://info.uniswap.org/pair/0x5c599e277c981d796dbf94c6e79ddac610d6052b",
-  },
-  BPT: {
-    name: "BPT",
-    address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
-  ZZZETH: {
-    name: "ZZZETHLP",
-    address: "0x7d829fcc84f9dca5a3e6d9fb73545bacf350146a",
-    abi: require("./abi/erc20_abi.json"),
-    isLPToken: true,
-    decimals: 18,
-  },
-  ZZZNAP: {
-    name: "ZZZNAPLP",
-    address: "0x0DE0322D3ac0d5002e2bc9c3a188728728D90799",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  ZZZNAPV2: {
-    name: "ZZZNAPLPV2",
-    address: "0x5c599e277c981d796dbf94c6e79ddac610d6052b",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  ZZZETHV2: {
-    name: "ZZZETHLPV2",
-    address: "0x4b29ed4190d8387755510feee729fbc974152a0c",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  DREAMETH: {
-    name: "DREAMETHLP",
-    address: "0x19b3de48392778f8e6ef332fee002aa5e15fe41a",
-    abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-    isLPToken: true,
-  },
-  DREAM: {
-    name: "DREAM",
-    address: "0xa93D5Cfaa41193b13321c035b4bDD2B534172762",
-    abi: require("./abi/erc20_abi.json"),
+  Cake: {
+   name: "Cake",
+    address: "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
+    abi: require("./abi/cake.json"),
     decimals: 18,
     purchaseFrom:
-      "https://info.uniswap.org/pair/0x19b3de48392778f8e6ef332fee002aa5e15fe41a",
+      "",
   },
-  WETH: {
+  MDEX: {
+    name: "MDEX",
+    address: "0x9C65AB58d8d978DB963e63f2bfB7121627e3a739",
+    abi: require("./abi/mdex.json"),
+    decimals: 18,
+      "",
+  },
+  BSCSWAP: {
+    name: "BSCSWAP",
+    address: "0xf388Ee045CAb30321db3fb69EAb7DfB0c20f10EC",
+    abi: require("./abi/"),
+    isLPToken: true,
+    decimals: 18,
+    "",
+  },
+  DeFiYield: {
+    name: "DYP ",
+    address: "0x961C8c0B1aaD0c0b10a51FeF6a867E3091BCef17",
+    abi: require("./abi/dyb.json"),
+    decimals: 18,
+    isLPToken: true,
+    "",
+  },
+  SafeMoon: {
+    name: "SAFEMOON",
+    address: "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+    abi: require("./abi/savemon.json"),
+    decimals: 9,
+    isLPToken: true,
+  },
+   Bingo: {
+    name: "Bingo",
+    SafeMoon: {
+    name: "SAFEMOON",
+    address: "0x8076C74C5e3F5852037F31Ff0093Eeb8c8ADd8D3",
+    abi: require("./abi/savemon.json"),
+    decimals: 9,
+    isLPToken: true,
+    },
+   Bingo: {
+    name: "Bingo",
+    address: "0x579A6277a6c2c63a5b25006F63Bce5DC8D9c25e7",
+    abi: require("./abi/bingo.json"),
+    decimals: 18,
+    isLPToken: true,
+    },
+    ETH: {
+    name: "Ethereum Token",
+    address: "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+    abi: require("./abi/eth.json"),
+    decimals: 18,
+    isLPToken: true,
+   },
+   DAI: {
+    name: "DAI",
+    address: "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    abi: require("./abi/dai.json"),
+    decimals: 18,
+    purchaseFrom:
+      "",
+   },
+    WETH: {
     name: "WETH",
     address: "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
-    abi: require("./abi/erc20_abi.json"),
+   abi: require("./abi/erc20_abi.json"),
     decimals: 18,
-  },
-  DAI: {
+    },
+   DAI: {
     name: "DAI",
     address: "0x6B175474E89094C44Da98b954EedeAC495271d0F",
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
     purchaseFrom:
-      "https://info.uniswap.org/pair/0xa478c2975ab1ea89e8196811f51a7b7ade33eb11",
-  },
-  NAP: {
+      "",
+    },
+    NAP: {
     name: "NAP",
     address: "0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c",
     abi: require("./abi/erc20_abi.json"),
@@ -142,7 +158,7 @@ export const tokens: { [tokenName: string]: Token } = {
     decimals: 18,
     isLPToken: true,
   },
-  COVAL: {
+    COVAL: {
     name: "COVAL",
     address: "0x3d658390460295fb963f54dc0899cfb1c30776df",
     abi: require("./abi/erc20_abi.json"),
@@ -165,7 +181,7 @@ export const tokens: { [tokenName: string]: Token } = {
     name: "CORDETH",
     address: "0xf5ae4b8017fdd81d5ee25132d6bbcd75442be90a",
     abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
+   decimals: 18,
     isLPToken: true,
   },
   AHFETH: {
@@ -177,7 +193,7 @@ export const tokens: { [tokenName: string]: Token } = {
   },
   AHF: {
     name: "AHF",
-    address: "0xd6d3608f2d770d0a8d0da62d7afe21ea1da86d9c",
+   address: "0xd6d3608f2d770d0a8d0da62d7afe21ea1da86d9c",
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
   },
@@ -188,7 +204,7 @@ export const tokens: { [tokenName: string]: Token } = {
     decimals: 18,
   },
   SSLETH: {
-    name: "SSLETHLP",
+   name: "SSLETHLP",
     address: "0x287856d10418e01ef1e93df9962b04d9a3a521c9",
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
@@ -205,8 +221,8 @@ export const tokens: { [tokenName: string]: Token } = {
     name: "UNIC",
     address: "0x37114773d5d74bd27c8e1167aeb50a6e0a3a354c",
     abi: require("./abi/erc20_abi.json"),
-    decimals: 18,
-  },
+    decimals: 18, 
+   },
   CATETH: {
     name: "CATETH",
     address: "0x781ce9a6808503261ab27973f3a34dd9f851a6fc",
@@ -276,7 +292,7 @@ export const tokens: { [tokenName: string]: Token } = {
     abi: require("./abi/erc20_abi.json"),
     decimals: 18,
   },
-};
+ };
 
 // Mainnet pools
 export const pools: Pool[] = [
@@ -864,7 +880,7 @@ export const pools: Pool[] = [
     category: PoolCategory.ZZZ,
     boostLevels: boostLevels.extended,
   },
-  // {
+  {
   //   id: "5",
   //   name: "Yawn",
   //   address: "0x6aA4478C45c7818A9b5c1C513D894cF74b596bd6",
@@ -884,7 +900,7 @@ export const pools: Pool[] = [
   //   category: PoolCategory.ZZZ,
   //   boostLevels: boostLevels.normal,
   //   statusText: "Pools is running low, please withdraw or exit!",
-  // },
+  },
   {
     id: "6",
     name: "Snore",
@@ -926,7 +942,7 @@ export const pools: Pool[] = [
     poolType: PoolType.LP,
     category: PoolCategory.ZZZ,
     boostLevels: boostLevels.normal,
-  },
+  //*     
   // {
   //   id: "8",
   //   name: "Hidden Gem",
@@ -983,8 +999,8 @@ export const pools: Pool[] = [
   //   poolStatus: PoolStatus.Closed,
   //   poolType: PoolType.SingleTokenLPOutput,
   //   category: PoolCategory.ZZZ,
-  // },
-  {
+     },
+     {
     id: "11",
     name: "Napper",
     address: "0x05d0c213386e25BFB3f3872FCE6c7c7998A3E54C",
@@ -1159,11 +1175,11 @@ export const pools: Pool[] = [
     category: PoolCategory.ZZZ,
     boostLevels: boostLevels.normal,
   },
-];
+ ];
 
 // Local test network tokens
-export const localTokens: { [tokenName: string]: Token } = {
-  Axioms: {
+   export const localTokens: { [tokenName: string]: Token } = {
+    Axioms: {
     name: "Axioms",
     address: "0x0165878A594ca255338adfa4d48449f69242Eb8F",
     abi: require("./abi/erc20_abi.json"),
@@ -1195,7 +1211,7 @@ export const localTokens: { [tokenName: string]: Token } = {
     purchaseFrom:
       "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
   },
-  ZZZV2: {
+    ZZZV2: {
     name: "ZZZV2",
     address: "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
     abi: require("./abi/erc20_abi.json"),
@@ -1203,7 +1219,7 @@ export const localTokens: { [tokenName: string]: Token } = {
     purchaseFrom:
       "https://app.uniswap.org/#/add/0x66b3037aa8dd64c3ef1aee13a4d1f2509f672d1c/0xc75f15ada581219c95485c578e124df3985e4ce0",
   },
-  NAPV2: {
+   NAPV2: {
     name: "NAP",
     address: "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
     abi: require("./abi/erc20_abi.json"),
@@ -1296,10 +1312,10 @@ export const kovanTokens: { [tokenName: string]: Token } = {
     decimals: 18,
     purchaseFrom: "",
   },
-};
-
-export const vaultContracts: { [network: string]: any } = {
-  unknown: {
+  };
+ 
+   export const vaultContracts: { [network: string]: any } = {
+    unknown: {
     vault: {
       address: "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
       abi: require("./abi/vault.json"),
@@ -1330,12 +1346,13 @@ export const vaultContracts: { [network: string]: any } = {
       address: "0xe41058D378B972c48F5bCBec2b39A8b1f8964706",
       abi: require("./abi/multiplier.json"),
     },
-    boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
+     boostTokens: [tokens.Axioms, tokens.NAPV2, tokens.DREAM, tokens.DAI],
+    )    
   },
 };
 
-export const kovanPools: Pool[] = [
-  {
+    export const kovanPools: Pool[] = [
+    {
     id: "10212",
     name: "KOVANTEST",
     address: "0xEce0aC88Ef2B9Ab174cc9c1472AF1f6776554ECE",
@@ -1373,6 +1390,7 @@ export const contracts: { [network: string]: any[] } = {
       abi: require("./abi/pool_multiplier.json"),
     },
   ],
+  
   homestead: [
     {
       name: "Multiplier",
@@ -1382,17 +1400,17 @@ export const contracts: { [network: string]: any[] } = {
   ],
 };
 
-export function getContract(name: string) {
+  export function getContract(name: string) {
   return contracts[EthStore.networkName].find(
     (contract: any) => contract.name === name
-  );
-}
+   );
+   }
 
-export const otherPools = [
+   export const otherPools = [
   {
     name: "Balancer Pool",
     skipRender: false,
     address: "0x4f9dde745bf54f207dfc1fe34896d6752c63ad07",
-    abi: require("./abi/balancer_pool_abi.json"),
-  },
-];
+    abi: require("./abi/balancer_pool_abi.json"),  
+   },
+ ]
